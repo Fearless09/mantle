@@ -3,7 +3,7 @@ import { CloseSVG, WarningSVG } from './SVGComponents'
 
 export default function GasFee({ onClose }) {
     return (
-        <div className="bg-white/[.08] rounded-[14px] p-4 mx-auto flex items-start content-start gap-x-2 w-full lg:w-[484px] max-w-lg mt-4">
+        <div className="bg-white/[.08] rounded-[14px] p-4 mx-auto flex items-start content-start gap-x-2 w-full max-w-lg mt-4">
             <WarningSVG />
             <div className='flex-grow font-normal text-[16px] text-[rgb(196,196,196)]'>
                 <p className="uppercase">gas fee required</p>
