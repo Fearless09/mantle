@@ -9,7 +9,9 @@ export default function Migrate() {
     <>
       <Background />
       <Navbar />
-      <Migrator />
+      <div className='px-4'>
+        <Migrator />
+      </div>
       <Copyright />
     </>
   )

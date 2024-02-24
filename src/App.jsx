@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './component/Navbar';
 import Mainnet from './component/Mainnet';
@@ -16,11 +15,13 @@ function App() {
     <>
       <Background />
       <Navbar />
-      <Mainnet />
-      <Accord />
-      {viewGas && <GasFee onClose={() => setViewGas(false)} />}
-      <Copyright />
-      <MantleFooter />
+      <div className='px-4'>
+        <Mainnet />
+        <Accord />
+        {viewGas && <GasFee onClose={() => setViewGas(false)} />}
+        <Copyright />
+        <MantleFooter />
+      </div>
     </>
   );
 }
