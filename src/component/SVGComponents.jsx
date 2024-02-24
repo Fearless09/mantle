@@ -295,3 +295,36 @@ export const CloseSVG = () => (
         <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
     </svg>
 );
+
+export const ArrowForwardSVG = () => (
+    <svg
+        width={14}
+        height={14}
+        viewBox="0 0 14 14"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            d="M0.34903 6.40001L11.3494 6.40001L6.14983 1.20041L6.99943 0.349609L13.6738 7.00001L6.99943 13.6744L6.14983 12.7996L11.3494 7.60001L0.34903 7.60001L0.34903 6.40001Z"
+            fill="white"
+        />
+    </svg>
+);
+
+export const HamburgerSVG = () => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={1.5}
+        stroke="currentColor"
+        aria-hidden="true"
+        className="h-8 w-8 text-type-secondary hover:text-type-primary transition ease-in-out duration-300"
+    >
+        <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        />
+    </svg>
+);

@@ -94,10 +94,10 @@ export default function Mainnet() {
                 <div className='pt-8 pb-2'>
                     {/* To Mainnet */}
                     <div className="flex gap-1 pb-4 items-center">
-                        <p class="text-[14px] leading-[20px] text-[rgb(196,196,196)]">To:</p>
+                        <p className="text-[14px] leading-[20px] text-[rgb(196,196,196)]">To:</p>
                         <div className="flex space-x-2 items-center">
                             <SmallMantleSVG />
-                            <p class="text-sm text-[rgb(196,196,196)]">Mantle Mainnet</p>
+                            <p className="text-sm text-[rgb(196,196,196)]">Mantle Mainnet</p>
                         </div>
                     </div>
                     {/* You will receive input */}

@@ -6,7 +6,7 @@ export default function GasFee({ onClose }) {
         <div className="bg-white/[.08] rounded-[14px] p-4 mx-auto flex items-start content-start gap-x-2 w-full lg:w-[484px] max-w-lg mt-4">
             <WarningSVG />
             <div className='flex-grow font-normal text-[16px] text-[rgb(196,196,196)]'>
-                <p class="uppercase">gas fee required</p>
+                <p className="uppercase">gas fee required</p>
                 <p>• ETH (L1) to deposit from Ethereum Mainnet</p>
                 <p >• MNT (L2) to transact on Mantle Mainnet</p>
             </div>
