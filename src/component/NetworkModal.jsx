@@ -21,109 +21,115 @@ const coins = [
         balance: '0.0'
     },
     {
-        icon: '/mnt.svg',
+        icon: '/assest/lusd.webp',
         symbol: 'LUSD',
         name: 'LUSD Stablecoin',
         balance: '0.0'
     },
     {
-        icon: '/mnt.svg',
+        icon: '/assest/usdlr.webp',
         symbol: 'USDLR',
         name: 'USDLR by Stable',
         balance: '0.0'
     },
     {
-        icon: '/mnt.svg',
+        icon: '/assest/eth.svg',
         symbol: 'ETH',
         name: 'Ether',
         balance: '0.0'
     },
     {
-        icon: '/mnt.svg',
+        icon: '/assest/meth.svg',
         symbol: 'mETH',
         name: 'mETH',
         balance: '0.0'
     },
     {
-        icon: '/mnt.svg',
+        icon: '/assest/wsteth.svg',
         symbol: 'wstETH',
         name: 'Wrapped liquid staked Ether 2.0',
         balance: '0.0'
     },
     {
-        icon: '/mnt.svg',
+        icon: '/assest/apex.svg',
         symbol: 'APEX',
         name: 'ApeX Token',
         balance: '0.0'
     },
     {
-        icon: '/mnt.svg',
+        icon: '/assest/babydoge.webp',
         symbol: 'BabyDoge',
         name: 'Baby Doge Coin',
         balance: '0.0'
     },
     {
-        icon: '/mnt.svg',
+        icon: '/assest/bel.svg',
+        symbol: 'BEL',
+        name: 'Bella',
+        balance: '0.0'
+    },
+    {
+        icon: '/assest/cups.svg',
         symbol: 'CUPS',
         name: 'Custom UPS',
         balance: '0.0'
     },
     {
-        icon: '/mnt.svg',
+        icon: '/assest/ePendle.svg',
         symbol: 'ePendle',
         name: 'Equilibria Token',
         balance: '0.0'
     },
     {
-        icon: '/mnt.svg',
+        icon: '/assest/eqb.svg',
         symbol: 'EQB',
         name: 'Equilibria Token',
         balance: '0.0'
     },
     {
-        icon: '/mnt.svg',
+        icon: '/assest/floki.webp',
         symbol: 'FLOKI',
         name: 'FLOKI',
         balance: '0.0'
     },
     {
-        icon: '/mnt.svg',
+        icon: '/assest/ido.svg',
         symbol: 'IDO',
         name: 'Idexo Token',
         balance: '0.0'
     },
     {
-        icon: '/mnt.svg',
+        icon: '/assest/ionix.webp',
         symbol: 'IONX',
         name: 'IONX',
         balance: '0.0'
     },
     {
-        icon: '/mnt.svg',
+        icon: '/assest/pendle.webp',
         symbol: 'PENDLE',
         name: 'PENDLE',
         balance: '0.0'
     },
     {
-        icon: '/mnt.svg',
+        icon: '/assest/pepe.webp',
         symbol: 'PEPE',
         name: 'Pepe',
         balance: '0.0'
     },
     {
-        icon: '/mnt.svg',
+        icon: '/assest/shib.webp',
         symbol: 'SHIB',
         name: 'SHIBA INU',
         balance: '0.0'
     },
     {
-        icon: '/mnt.svg',
+        icon: '/assest/trb.svg',
         symbol: 'TRB',
         name: 'Tellor Tributes',
         balance: '0.0'
     },
     {
-        icon: '/mnt.svg',
+        icon: '/assest/wbtc.svg',
         symbol: 'WBTC',
         name: 'Wrapped BTC',
         balance: '0.0'
