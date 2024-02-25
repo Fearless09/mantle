@@ -1,16 +1,19 @@
 import React, { useState } from 'react'
 import { ArrowDownSVG, EthereumSVG, LineBreakSVG, SmallMantleSVG, WarningSVG } from './SVGComponents'
 import Checked from './Checked'
+import NetworkModal from './NetworkModal'
 
 export default function Mainnet() {
     const [active, setActive] = useState('deposit')
+    const [network, setNetwork] = useState('MNT')
+    const [viewNetworkModal, setViewNetworkModal] = useState(false)
 
     return (
         <div className='mt-12'>
             <h1 className='text-[48px] text-white text-center mb-8'>Mainnet Bridge</h1>
 
-            {/* Deposit and Withdraw Button */}
             <div className="bg-white/[.06] rounded-[14px] py-8 px-5 mx-auto max-w-lg w-full relative">
+                {/* Deposit and Withdraw Button */}
                 <div className='flex rounded-[10px] bg-white/[0.05] p-1 select-none space-x-2'>
                     {/* Deposit Button */}
                     <button
@@ -34,7 +37,7 @@ export default function Mainnet() {
                     </button>
                 </div>
                 {/* Withdraw Display Here */}
-               {active === 'withdraw' && (
+                {active === 'withdraw' && (
                     <div className="mt-4 grid grid-cols-2 gap-3">
                         <div className="flex flex-row-reverse md:flex-row justify-between w-full items-center cursor-pointer p-3 border-solid border rounded-lg border-[#A8D0CD] text-white bg-white/5 hover:border-[#A8D0CD]">
                             <div className='flex items-center gap-2.5'>
@@ -46,7 +49,7 @@ export default function Mainnet() {
                             <Checked />
                         </div>
                     </div>
-               )}
+                )}
                 {/* Continue From Ethereum to Your Balance */}
                 <div className={`py-6 ${active === 'deposit' && 'mt-4'}`}>
                     <div className='flex pb-4 items-center gap-1'>
@@ -61,18 +64,22 @@ export default function Mainnet() {
                         <input
                             className='bg-black w-full rounded-lg h-12 ps-3 pe-[185px] ring-1 ring-[rgb(196,196,196)]'
                             type="text"
+                            placeholder='0'
                         />
                         <div className='bg-black flex gap-2.5 items-center absolute top-1/2 -translate-y-1/2 right-0 z-10 rounded-lg'>
+                            {/* Max */}
                             <button
                                 className='border h-fit rounded-lg text-md font-medium transition-all disabled:cursor-not-allowed disabled:opacity-50 w-fit px-4 py-2 text-sm text-brand hover:bg-brand-light disabled:hover:bg-transparent border-stroke-disabled'
                                 disabled
                             >
                                 Max
                             </button>
+                            {/* Network */}
                             <button
                                 className='flex gap-2.5 items-center h-12 cursor-default rounded-lg py-1.5 px-5 text-white shadow-sm focus:outline-none focus:ring-0 focus:ring-white/70 font-bold'
+                                onClick={() => setViewNetworkModal(true)}
                             >
-                                <span>MNT</span>
+                                <span>{network}</span>
                                 <ArrowDownSVG />
                             </button>
                         </div>
@@ -118,6 +125,15 @@ export default function Mainnet() {
                     </button>
                 </div>
             </div>
+
+            {/* Network Modal */}
+            {viewNetworkModal && (
+                <NetworkModal
+                    network={network}
+                    setNetwork={setNetwork}
+                    onClose={() => setViewNetworkModal(false)}
+                />
+            )}
         </div>
     )
 }
